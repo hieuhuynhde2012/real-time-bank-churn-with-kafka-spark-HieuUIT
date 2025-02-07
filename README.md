@@ -63,12 +63,21 @@ This project focuses on real-time customer churn prediction in the banking secto
     bin\windows\kafka-topics.bat --create --topic transactions --bootstrap-server localhost:9092
     bin\windows\kafka-topics.bat --create --topic churn-predictions --bootstrap-server localhost:9092
 - **Model Setup**:
-The trained model is available in the output directory.
-Modify predict.py to load the model and configure inference.
+The trained model is available in the output directory. If you don't want to train a new model, you can skip to the next step.
+Modify predict.py if you want to train a new model.
 - **Kafka Producer Configuration**:
+Open kafka-spark-prediction folder
 Edit producer.py to set up the Kafka data producer.
+    ```sh
+    cd kafka-spark-prediction
+Run file Kafka_Producer.ipynb to see Kafka Producer Result
+Run file Kafka_Consumer.ipynb to see Kafka Producer Result
 - **Streamlit Configuration**:
+Open visualize folder
 Modify app.py to integrate model inference and display real-time predictions.
+    ```sh
+    cd visualize
+    streamlint run app.py
 
 ## Data Pipeline
 
