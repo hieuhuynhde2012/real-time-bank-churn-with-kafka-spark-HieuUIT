@@ -66,15 +66,16 @@ This project focuses on real-time customer churn prediction in the banking secto
 The trained model is available in the output directory. If you don't want to train a new model, you can skip to the next step.
 Modify predict.py if you want to train a new model.
 - **Kafka Producer Configuration**:
-Open kafka-spark-prediction folder
-Edit producer.py to set up the Kafka data producer.
+- Open kafka-spark-prediction folder
+- Edit producer.py to set up the Kafka data producer.
     ```sh
     cd kafka-spark-prediction
-Run file Kafka_Producer.ipynb to see Kafka Producer Result
-Run file Kafka_Consumer.ipynb to see Kafka Producer Result
+    - **Navigate to the Kafka directory:**: 
+- Run file Kafka_Producer.ipynb to see Kafka Producer Result
+- Run file Kafka_Consumer.ipynb to see Kafka Producer Result
 - **Streamlit Configuration**:
-Open visualize folder
-Modify app.py to integrate model inference and display real-time predictions.
+- Open visualize folder
+- Modify app.py to integrate model inference and display real-time predictions.
     ```sh
     cd visualize
     streamlint run app.py
@@ -85,30 +86,30 @@ Modify app.py to integrate model inference and display real-time predictions.
   <img src="pipeline.jpg" >
 </p>
 
-Kafka: Streams simulated bank transaction data.
-Apache Spark: Processes data in real time and makes churn predictions.
-Machine Learning Model: Predicts churn likelihood.
-Streamlit Dashboard: Displays predictions and analytics.
+- Kafka: Streams simulated bank transaction data.
+- Apache Spark: Processes data in real time and makes churn predictions.
+- Machine Learning Model: Predicts churn likelihood.
+- Streamlit Dashboard: Displays predictions and analytics.
 
 ## Usage
-Query Apache Spark Streaming Data
-Open Apache Spark UI to monitor streaming jobs.
-Monitor Kafka Messages
-Use Kafka CLI to check message flow.
-Open Streamlit Dashboard
-Visit http://localhost:8501/ in your browser to view real-time analytics.
-Visualizations
-(Add details about visualizations if needed.)
+- Query Apache Spark Streaming Data
+- Open Apache Spark UI to monitor streaming jobs.
+- Monitor Kafka Messages
+- Use Kafka CLI to check message flow.
+- Open Streamlit Dashboard
+- Visit http://localhost:8501/ in your browser to view real-time analytics.
+-Visualizations
+- (Add details about visualizations if needed.)
 
 ## Conclusion
-This project provides a robust real-time churn prediction system for banking services.
-By leveraging streaming data processing and machine learning, it helps banks identify at-risk customers early, enabling proactive retention strategies.
+- This project provides a robust real-time churn prediction system for banking services.
+- By leveraging streaming data processing and machine learning, it helps banks identify at-risk customers early, enabling proactive retention strategies.
 
 ## Future Direction
-Enhance Model Accuracy: Improve churn prediction with more advanced techniques.
-Scalability: Optimize the pipeline for larger datasets.
-Alert System: Implement notifications for high-risk customers.
-Additional Visualizations: Expand reporting insights.
+- Enhance Model Accuracy: Improve churn prediction with more advanced techniques.
+- Scalability: Optimize the pipeline for larger datasets.
+- Alert System: Implement notifications for high-risk customers.
+- Additional Visualizations: Expand reporting insights.
 ## Contact
-For any questions or feedback, please reach out to trunghieu201297@gmail.com.
+- For any questions or feedback, please reach out to trunghieu201297@gmail.com.
 
