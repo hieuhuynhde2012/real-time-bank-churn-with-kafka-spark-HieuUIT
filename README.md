@@ -70,7 +70,6 @@ Modify predict.py if you want to train a new model.
 - Edit producer.py to set up the Kafka data producer.
     ```sh
     cd kafka-spark-prediction
-    - **Navigate to the Kafka directory:**: 
 - Run file Kafka_Producer.ipynb to see Kafka Producer Result
 - Run file Kafka_Consumer.ipynb to see Kafka Producer Result
 - **Streamlit Configuration**:
